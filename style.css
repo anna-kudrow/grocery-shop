@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header__links {
+  background-color: #2a2a2a;
+  width: 100%;
+  color: white;
+}
+
+.main-header__links-container {
+  margin: 0 auto;
+  max-width: 524px;
+}
+
+.main-header__links-mail {
+  color: white;
+}
