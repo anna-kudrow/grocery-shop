@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+}
+body,
+button {
+  font-family: "Inter", sans-serif;
 }
 
 a {
@@ -11,21 +17,46 @@ a {
   background-color: #2a2a2a;
   width: 100%;
   color: white;
+  padding-top: 11px;
+  padding-bottom: 12px;
 }
 
 .links__container {
   margin: 0 auto;
-  max-width: 524px;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.links__link-mail-icon {
+  margin-right: 6px;
 }
 
 .links__mail {
   color: white;
 }
 
+.links__dividing-stick {
+  margin-left: 17px;
+  margin-right: 20px;
+}
+
+.links__media-icons {
+  display: flex;
+  gap: 20px;
+}
+
 .additional-info__container {
   display: flex;
   margin: 0 auto;
   max-width: 1199px;
+  padding-top: 25px;
+  padding-bottom: 26px;
+}
+
+.additional-info__logo {
+  margin-right: 47px;
 }
 
 .main-header__nav-container {
@@ -46,9 +77,8 @@ a {
 }
 
 .main-content__container {
-  max-width: 1199px;
+  max-width: 1170px;
   margin: 0 auto;
-  display: flex;
 }
 
 .main-content__discount-cards {
