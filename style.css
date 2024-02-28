@@ -13,11 +13,62 @@ a {
   color: white;
 }
 
-.main-header__links-container {
+.links__container {
   margin: 0 auto;
   max-width: 524px;
 }
 
-.main-header__links-mail {
+.links__mail {
   color: white;
+}
+
+.additional-info__container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1199px;
+}
+
+.main-header__nav-container {
+  display: flex;
+}
+
+.nav__main-navigation {
+  display: flex;
+}
+
+.main-navigation__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.main-content {
+  background-color: #e5e5e5;
+}
+
+.main-content__container {
+  max-width: 1199px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main-content__discount-cards {
+  display: flex;
+}
+
+.discount-cards__item {
+  width: 358px;
+  height: 228px;
+  border: 5px solid white;
+}
+
+.card-1 {
+  background-image: url(images/discount-card1.jpg);
+}
+
+.card-2 {
+  background-image: url(images/discount-card2.jpg);
+}
+
+.card-3 {
+  background-image: url(images/discount-card3.jpg);
 }
