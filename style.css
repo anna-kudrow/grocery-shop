@@ -59,6 +59,51 @@ a {
   margin-right: 47px;
 }
 
+.additional-info__geo-choise {
+  margin-right: 26px;
+  display: flex;
+}
+
+.geo-choice__list {
+  color: #999;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  border: none;
+}
+
+.additional-info__search {
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  padding: 5px 131px 5px 10px;
+  border-radius: 3px;
+  margin-right: 153px;
+}
+
+.search__icon {
+  margin-right: 10px;
+}
+
+.search__text {
+  border: none;
+  background-color: #f7f7f7;
+}
+
+.public-info__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.public-info__list .public-info__item:first-child {
+  margin-right: 10px;
+}
+
+.public-info__list .public-info__item:nth-child(n + 2) {
+  margin-right: 24px;
+}
+
 .main-header__nav-container {
   display: flex;
 }
