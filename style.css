@@ -106,10 +106,24 @@ a {
 
 .main-header__nav-container {
   display: flex;
+  margin: 0 auto;
+  max-width: 1199px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.main-header__nav {
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+}
+
+.nav__burger-menu {
+  margin-right: 45px;
 }
 
 .nav__main-navigation {
   display: flex;
+  align-items: center;
 }
 
 .main-navigation__list {
