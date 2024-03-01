@@ -183,15 +183,12 @@ a {
   border: none;
 }
 
-.main-content__categories {
-  padding-top: 66px;
-}
-
 .small-title {
   color: #7fad39;
   font-size: 14px;
   font-style: normal;
   font-weight: 800;
+  margin-top: 60px;
 }
 
 .title {
@@ -200,6 +197,7 @@ a {
   font-style: normal;
   font-weight: 800;
   line-height: 30px;
+  margin-bottom: 40px;
 }
 
 .categories__cards {
@@ -226,12 +224,7 @@ a {
   line-height: 30px;
 }
 
-.main-content__top-featured-prod {
-  padding-top: 80px;
-}
-
 .prod-cards {
-  padding-top: 40px;
   display: flex;
   gap: 10px;
 }
@@ -319,4 +312,91 @@ a {
   font-style: normal;
   font-weight: 800;
   line-height: 22px;
+}
+
+.adv-card__wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.adv-card {
+  width: 377px;
+  height: 290px;
+}
+
+.adv-card-1 {
+  background-image: url(images/main/best-offer-pic1.jpg);
+}
+
+.adv-card-2 {
+  background-image: url(images/main/best-offer-pic2.jpg);
+}
+
+.adv-card-3 {
+  background-image: url(images/main/best-offer-pic3.jpg);
+}
+
+.adv-card__info {
+  margin-left: 20px;
+}
+
+.adv-card-1 .adv-card__info {
+  width: 151px;
+  height: 123px;
+  margin-top: 67px;
+}
+
+.adv-card-2 .adv-card__info {
+  margin-top: 139px;
+}
+
+.adv-card-3 .adv-card__info {
+  margin-top: 97px;
+  width: 177px;
+}
+
+.adv-card__title {
+  color: #2a2a2a;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 34px; /* 121.429% */
+}
+
+.avd-card__text {
+  color: #2a2a2a;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 34px;
+}
+
+.adv-card__button {
+  background-color: #2a2a2a;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 20px;
+  border: none;
+  padding: 15px 20px;
+}
+
+.adv-card__long-card {
+  background-image: url(images/main/long.jpg);
+  width: 100%;
+  margin-top: 20px;
+  padding: 39px 330px 20px;
+  background-repeat: no-repeat;
+}
+
+.long-card__offer {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 34px;
 }
