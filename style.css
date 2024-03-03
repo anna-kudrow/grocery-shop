@@ -388,8 +388,10 @@ a {
   background-image: url(images/main/long.jpg);
   width: 100%;
   margin-top: 20px;
-  padding: 39px 330px 20px;
   background-repeat: no-repeat;
+  width: 1170px;
+  height: 140px;
+  position: relative;
 }
 
 .long-card__offer {
@@ -399,4 +401,26 @@ a {
   font-style: normal;
   font-weight: 900;
   line-height: 34px;
+  position: absolute;
+  top: 23%;
+  left: 32%;
+}
+
+.long-card__promo-code {
+  border: 2px dashed #fff;
+  background: rgba(127, 173, 57, 0.7);
+  padding: 1px 30px;
+  position: absolute;
+  top: 55%;
+  left: 39%;
+}
+
+.promo-code {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 34px; /* 242.857% */
+  text-transform: uppercase;
 }
