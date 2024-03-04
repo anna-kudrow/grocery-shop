@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <title>Fresh food</title>
   </head>
   <body>
@@ -36,11 +37,8 @@
       </div>
       <div class="main-header__additional-info">
         <div class="additional-info__container">
-          <img
-            class="additional-info__logo"
-            src="images/header/logo-apple.svg"
-            alt="logo"
-          />
+          <div class="additional-info__logo">LOGO
+            🍎</div>
           <div class="additional-info__geo-choise">
             <img src="images/header/location-sign.svg" alt="geo-icon" />
             <select class="geo-choice__list" name="towns" id="towns">
@@ -92,12 +90,25 @@
         </div>
       </div>
       <nav class="main-header__nav">
-        <div class="main-header__nav-container">
-          <img
+        <div class="nav__container">
+
+          <div class="menu">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+                <li><a href="#" class="menu-item">Главная</a><li>
+                <li><a href="#" class="menu-item">О нас</a><li>
+                <li><a href="#" class="menu-item">Команда</a><li>
+                <li><a href="#" class="menu-item">Контакты</a><li>
+            </ul>
+        </div>
+        <button class="burger"></button>
+
+          <!-- <img
             class="nav__burger-menu"
             src="images/header/burger.svg"
             alt="menu"
-          />
+          /> -->
           <div class="nav__main-navigation">
             <ul class="main-navigation__list">
               <li class="main-navigation__item main-navigation__item--current">
@@ -335,68 +346,255 @@
             Top Vegetables & Fruits Products
           </h2>
           <div class="top-products__prod-cards prod-cards">
-            <div class="prod-card"></div>
-            <div class="prod-card"></div>
-            <div class="prod-card"></div>
-            <div class="prod-card"></div>
-            <div class="prod-card"></div>
+            <div class="top-featured-prod__prod-cards prod-cards">
+              <div class="prod-card">
+                <div class="prod-card__wrapper">
+                  <div class="prod-card__header">
+                    <div class="header__wrapper"><span class="header__discount">15%Off</span></div>
+                    <img class="header__like" src="images/main/like.svg" alt="like">
+                  </div>
+                  <img class="prod-card__picture" src="images/main/apple.jpg" alt="apple">
+                  <p class="prod-card__availability">Available(in stock)</p>
+                  <p class="prod-card__name">Red apple</p>
+                  <div class="price__wrapper"><p class="price">$12 <span class="previous-price">$15</span></p></div>             
+                  <div class="prod-card__buy">
+                    <div class="buy__amount"><img src="images/main/minus.svg" alt="decrease item icon">
+                    <div class="amount__wrapper"><span class="amount__number">1</span></div>
+                   <img src="images/main/plus.svg" alt="insrease item icon"></div>
+                    <img src="images/main/gray-bascket.svg" alt="shop bascket icon">
+                  </div>
+                </div>
+            </div>
+
+            <div class="prod-card">
+              <div class="prod-card__wrapper">
+                <div class="prod-card__header">
+                  <div class="header__wrapper"><span class="header__discount">15%Off</span></div>
+                  <img class="header__like" src="images/main/like.svg" alt="like">
+                </div>
+                <img class="prod-card__picture" src="images/main/green-pap.jpg" alt="green papper">
+                <p class="prod-card__availability">Available(in stock)</p>
+                <p class="prod-card__name">Capsicum-green</p>
+                <div class="price__wrapper"><p class="price">$12 <span class="previous-price">$15</span></p></div>             
+                <div class="prod-card__buy">
+                  <div class="buy__amount"><img src="images/main/minus.svg" alt="decrease item icon">
+                  <div class="amount__wrapper"><span class="amount__number">1</span></div>
+                 <img src="images/main/plus.svg" alt="insrease item icon"></div>
+                  <img src="images/main/gray-bascket.svg" alt="shop bascket icon">
+                </div>
+              </div>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card__wrapper">
+              <div class="prod-card__header">
+                <div class="header__wrapper"><span class="header__discount">15%Off</span></div>
+                <img class="header__like" src="images/main/like.svg" alt="like">
+              </div>
+              <img class="prod-card__picture" src="images/main/pear.jpg" alt="Pear fruit">
+              <p class="prod-card__availability">Available(in stock)</p>
+              <p class="prod-card__name">Pear fruit</p>
+              <div class="price__wrapper"><p class="price">$12 <span class="previous-price">$15</span></p></div>             
+              <div class="prod-card__buy">
+                <div class="buy__amount"><img src="images/main/minus.svg" alt="decrease item icon">
+                <div class="amount__wrapper"><span class="amount__number">1</span></div>
+               <img src="images/main/plus.svg" alt="insrease item icon"></div>
+                <img src="images/main/gray-bascket.svg" alt="shop bascket icon">
+              </div>
+            </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card__wrapper">
+            <div class="prod-card__header">
+              <div class="header__wrapper"><span class="header__discount">15%Off</span></div>
+              <img class="header__like" src="images/main/like.svg" alt="like">
+            </div>
+            <img class="prod-card__picture" src="images/main/blueberry.jpg" alt="Blueberry">
+            <p class="prod-card__availability">Available(in stock)</p>
+            <p class="prod-card__name">Blueberry</p>
+            <div class="price__wrapper"><p class="price">$12 <span class="previous-price">$15</span></p></div>             
+            <div class="prod-card__buy">
+              <div class="buy__amount"><img src="images/main/minus.svg" alt="decrease item icon">
+              <div class="amount__wrapper"><span class="amount__number">1</span></div>
+             <img src="images/main/plus.svg" alt="insrease item icon"></div>
+              <img src="images/main/gray-bascket.svg" alt="shop bascket icon">
+            </div>
+          </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-card__wrapper">
+          <div class="prod-card__header">
+            <div class="header__wrapper"><span class="header__discount">15%Off</span></div>
+            <img class="header__like" src="images/main/like.svg" alt="like">
+          </div>
+          <img class="prod-card__picture" src="images/main/raspberry.jpg" alt="Fresh raspberry">
+          <p class="prod-card__availability">Available(in stock)</p>
+          <p class="prod-card__name">Fresh raspberry</p>
+          <div class="price__wrapper"><p class="price">$12 <span class="previous-price">$15</span></p></div>             
+          <div class="prod-card__buy">
+            <div class="buy__amount"><img src="images/main/minus.svg" alt="decrease item icon">
+            <div class="amount__wrapper"><span class="amount__number">1</span></div>
+           <img src="images/main/plus.svg" alt="insrease item icon"></div>
+            <img src="images/main/gray-bascket.svg" alt="shop bascket icon">
+          </div>
+        </div>
+    </div>
+            </div>
           </div>
         </section>
         <section class="main-content__new-products">
           <h3 class="new-products__small-title small-title">For You</h3>
           <h2 class="new-products__title title">Added new Products</h2>
-          <div class="new-products__prod-cards prod-cards"><div class="prod-card"></div>
-            <div class="prod-card"></div>
-            <div class="prod-card"></div>
-            <div class="prod-card"></div>
-            <div class="prod-card"></div></div>
+          <div class="top-products__prod-cards prod-cards">
+            <div class="top-featured-prod__prod-cards prod-cards">
+              <div class="prod-card">
+                <div class="prod-card__wrapper">
+                  <div class="prod-card__header">
+                    <div class="header__wrapper"><span class="header__discount">15%Off</span></div>
+                    <img class="header__like" src="images/main/like.svg" alt="like">
+                  </div>
+                  <img class="prod-card__picture" src="images/main/ginger.jpg" alt="Ginger">
+                  <p class="prod-card__availability">Available(in stock)</p>
+                  <p class="prod-card__name">Ginger</p>
+                  <div class="price__wrapper"><p class="price">$12 <span class="previous-price">$15</span></p></div>             
+                  <div class="prod-card__buy">
+                    <div class="buy__amount"><img src="images/main/minus.svg" alt="decrease item icon">
+                    <div class="amount__wrapper"><span class="amount__number">1</span></div>
+                   <img src="images/main/plus.svg" alt="insrease item icon"></div>
+                    <img src="images/main/gray-bascket.svg" alt="shop bascket icon">
+                  </div>
+                </div>
+            </div>
+
+            <div class="prod-card">
+              <div class="prod-card__wrapper">
+                <div class="prod-card__header">
+                  <div class="header__wrapper"><span class="header__discount">15%Off</span></div>
+                  <img class="header__like" src="images/main/like.svg" alt="like">
+                </div>
+                <img class="prod-card__picture" src="images/main/fig.jpg" alt="Two fresh figs">
+                <p class="prod-card__availability">Available(in stock)</p>
+                <p class="prod-card__name">Fresh figs</p>
+                <div class="price__wrapper"><p class="price">$12 <span class="previous-price">$15</span></p></div>             
+                <div class="prod-card__buy">
+                  <div class="buy__amount"><img src="images/main/minus.svg" alt="decrease item icon">
+                  <div class="amount__wrapper"><span class="amount__number">1</span></div>
+                 <img src="images/main/plus.svg" alt="insrease item icon"></div>
+                  <img src="images/main/gray-bascket.svg" alt="shop bascket icon">
+                </div>
+              </div>
+          </div>
+
+          <div class="prod-card">
+            <div class="prod-card__wrapper">
+              <div class="prod-card__header">
+                <div class="header__wrapper"><span class="header__discount">15%Off</span></div>
+                <img class="header__like" src="images/main/like.svg" alt="like">
+              </div>
+              <img class="prod-card__picture" src="images/main/strawberry.jpg" alt="Strawberry">
+              <p class="prod-card__availability">Available(in stock)</p>
+              <p class="prod-card__name">Strawberry</p>
+              <div class="price__wrapper"><p class="price">$12 <span class="previous-price">$15</span></p></div>             
+              <div class="prod-card__buy">
+                <div class="buy__amount"><img src="images/main/minus.svg" alt="decrease item icon">
+                <div class="amount__wrapper"><span class="amount__number">1</span></div>
+               <img src="images/main/plus.svg" alt="insrease item icon"></div>
+                <img src="images/main/gray-bascket.svg" alt="shop bascket icon">
+              </div>
+            </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card__wrapper">
+            <div class="prod-card__header">
+              <div class="header__wrapper"><span class="header__discount">15%Off</span></div>
+              <img class="header__like" src="images/main/like.svg" alt="like">
+            </div>
+            <img class="prod-card__picture" src="images/main/eggplant.jpg" alt="Eggplant">
+            <p class="prod-card__availability">Available(in stock)</p>
+            <p class="prod-card__name">Eggplant</p>
+            <div class="price__wrapper"><p class="price">$12 <span class="previous-price">$15</span></p></div>             
+            <div class="prod-card__buy">
+              <div class="buy__amount"><img src="images/main/minus.svg" alt="decrease item icon">
+              <div class="amount__wrapper"><span class="amount__number">1</span></div>
+             <img src="images/main/plus.svg" alt="insrease item icon"></div>
+              <img src="images/main/gray-bascket.svg" alt="shop bascket icon">
+            </div>
+          </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-card__wrapper">
+          <div class="prod-card__header">
+            <div class="header__wrapper"><span class="header__discount">15%Off</span></div>
+            <img class="header__like" src="images/main/like.svg" alt="like">
+          </div>
+          <img class="prod-card__picture" src="images/main/egg.jpg" alt="Egg">
+          <p class="prod-card__availability">Available(in stock)</p>
+          <p class="prod-card__name">Egg</p>
+          <div class="price__wrapper"><p class="price">$12 <span class="previous-price">$15</span></p></div>             
+          <div class="prod-card__buy">
+            <div class="buy__amount"><img src="images/main/minus.svg" alt="decrease item icon">
+            <div class="amount__wrapper"><span class="amount__number">1</span></div>
+           <img src="images/main/plus.svg" alt="insrease item icon"></div>
+            <img src="images/main/gray-bascket.svg" alt="shop bascket icon">
+          </div>
+        </div>
+    </div>
+            </div>
           </div>
         </section>
       </div>
     </main>
     <footer class="main-footer">
       <div class="main-footer__container">
-        <div class="main-footer__info-part">
-          <div class="main-footer__contact-info">
-            <img src="images/header/logo-apple.svg" alt="logo">
-            <address class="contact-info">Address: 60-49 Road 11378 New York <br>
-              Phone: +65 11.188.888 <br>
-              Email: hello@colorlib.com
-            </address>
+        <div class="info-part__wrapper">
+          <div class="main-footer__info-part">
+            <div class="main-footer__contact-info">
+              <div class="main-footer__logo">LOGO <br>
+                🍎🥝</div>
+              <address class="contact-info">Address: 60-49 Road 11378 New York <br>
+                Phone: +65 11.188.888 <br>
+                Email: hello@colorlib.com
+              </address>
+            </div>
+            <div class="main-footer__userful-links">
+              <h2 class="userful-links__titte">Useful link</h2>
+              <ul class="userful-links__list">
+                <li class="userful-links__item">About Us</li>
+                <li class="userful-links__item"> About Our Shop</li>
+                <li class="userful-links__item">Delivery infomation</li>
+                <li class="userful-links__item"> Privacy Policy</li>
+                <li class="userful-links__item">Our Sitemap</li>
+              </ul>
+            </div>
+            <div class="main-footer__footer-nav">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">HOME</li>
+                <li class="footer-nav__item">Product</li>
+                <li class="footer-nav__item">Contact</li>
+                <li class="footer-nav__item"> STORES</li>
+              </ul>
+            </div>
           </div>
-          <div class="main-footer__userful-links">
-            <h2 class="userful-links__titte">Useful link</h2>
-            <ul class="userful-links__list">
-              <li class="userful-links__item">About Us</li>
-              <li class="userful-links__item"> About Our Shop</li>
-              <li class="userful-links__item">Delivery infomation</li>
-              <li class="userful-links__item"> Privacy Policy</li>
-              <li class="userful-links__item">Our Sitemap</li>
+          <div class="main-footer__app-payment-part">
+            <h2 class="app-payment-part-title footer-title">Download App</h2>
+            <div class="app-payment-part__marketplace-buttons">
+              <button class="marketplace-buttons__appstore-button button" type="button"></button>
+              <button class="marketplace-buttons__google-button button" type="button"></button>
+            </div>
+            <h2 class="app-payment-part__title footer-title">Sign Up for Our Newsletter</h2>
+
+            <form class="app-payment-part__subscribe" action="submit_registration">
+              <div class="subscribe__field"><input class="field" type="text" id="email" name="user_email" placeholder="Enter Email Address"></div>
+              <div class="subscribe__button"><input class="submit-button" type="submit" value="SUBSCRIBE"></div>
+            </form>
+            <h2 class="app-payment-part-title footer-title">Payment Method</h2>
+            <img src="images/footer/credit-card.svg" alt="credit cards">
             </ul>
           </div>
-          <div class="main-footer__footer-nav">
-            <ul class="footer-nav__list">
-              <li class="footer-nav__item">HOME</li>
-              <li class="footer-nav__item">Product</li>
-              <li class="footer-nav__item">Contact</li>
-              <li class="footer-nav__item"> STORES</li>
-            </ul>
-          </div>
-        </div>
-        <div class="main-footer__app-payment-part">
-          <h2 class="app-payment-part-title">Download App</h2>
-          <div class="app-payment-part__marketplace-buttons">
-            <button class="marketplace-buttons__appstore-button" type="button"></button>
-            <button class="marketplace-buttons__google-button" type="button"></button>
-          </div>
-          <h2 class="app-payment-part-title">Sign Up for Our Newsletter</h2>
-          <form action="">
-            <input type="email" class="app-payment-title__sub-form" placeholder="enter email address">
-            <button class="app-payment-title__sub-buttont" type="submit">SUBSCRIBE</button>
-          </form>
-          <h2 class="app-payment-part-title">Payment Method</h2>
-          <img src="images/footer/credit-card.svg" alt="credit cards">
-          </ul>
         </div>
         <p class="main-footer__copyright-info">Copyright ©2021 All rights reserved | This template is made with 💚 by LOGO</p>
       </div>
