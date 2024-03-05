@@ -1,1 +1,1 @@
-This is a layout from Figma. Here I'm practicing my layout design skills without dev mode in Figma 🥲 
+In this project I implemented a descktop version of a layout from Figma. I used HTML, CSS, JS (JS for burger menu).
